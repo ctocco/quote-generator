@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Text(props) {
-  return <div id="text">{props.text}</div>;
+  return <div id="text">{props.quote}</div>;
 }
 
 Text.defaultProps = {
