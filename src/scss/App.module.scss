@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.body {
+  width: auto;
+  height: 100vh;
+  border: 1px red solid;
+}
+.text {
+  color: red;
+  font-family: $font-stack;
+  margin: 0;
+}
