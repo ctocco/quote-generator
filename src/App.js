@@ -1,9 +1,8 @@
-import React from "react";
-import styles from "./scss/App.module.scss";
-import QuoteBox from "./components/QuoteBox";
+import React from 'react';
+import styles from './scss/App.module.scss';
+import QuoteBox from './components/QuoteBox';
 
 function App() {
-  console.log(styles);
   return (
     <div className={styles.body}>
       <section>
