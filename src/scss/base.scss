@@ -1,5 +1,5 @@
-@import "variables";
-@import "reset";
+@import 'variables';
+@import 'reset';
 
 html {
   font-size: 16px;
@@ -11,17 +11,6 @@ body {
   font-family: $font-stack;
   font-size: 16px;
 }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5 {
-//   margin: 2.75rem 0 1rem;
-//   font-family: "Raleway", sans-serif;
-//   font-weight: 400;
-//   line-height: 1.15;
-// }
 
 h1 {
   margin-top: 0;
