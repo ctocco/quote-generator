@@ -1,6 +1,7 @@
-@import "variables";
+@import 'variables';
 
 .quoteBox {
+  padding: 0.5rem;
   height: 20rem;
   width: 28rem;
   background-color: $primary-color;
