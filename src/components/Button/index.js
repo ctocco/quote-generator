@@ -5,7 +5,12 @@ import styles from './Button.module.scss';
 function Button({ click, theme = 'light' }) {
   return (
     <div>
-      <button type="button" onClick={click} className={`${styles.btn}`} id="new-quote">
+      <button
+        type="button"
+        onClick={click}
+        className={`${styles.btn} ${styles[`btn--${theme}`]}`}
+        id="new-quote"
+      >
         New Quote
       </button>
     </div>

@@ -1,0 +1,9 @@
+@import '../../scss/base/index.scss';
+
+.btn {
+  @include button;
+}
+
+.btn--light {
+  @include button;
+}
