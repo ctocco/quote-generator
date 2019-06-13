@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../scss/Text.module.scss';
+import styles from './QuoteText.module.scss';
 
-function Text({ quote }) {
+function Text({ quote, author }) {
   return (
     <div id="text">
-      <p className={styles.text}>{quote}</p>
+      <blockquote className={styles.quote}>{quote}</blockquote>
+      <p>-{author}</p>
     </div>
   );
 }
@@ -16,6 +17,7 @@ function Text({ quote }) {
 
 Text.propTypes = {
   quote: PropTypes.string.isRequired,
+  author: PropTypes.string,
 };
 
 export default Text;
