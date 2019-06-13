@@ -1,0 +1,52 @@
+@import 'reset';
+@import 'base';
+@import 'colors';
+@import 'mixins';
+@import 'reset';
+@import 'typography';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+}
+
+p {
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: $base-font-weight;
+  line-height: 1.15;
+  margin: 0;
+}
+
+h1 {
+  font-size: $xxl-text-size;
+}
+
+h2 {
+  font-size: $xl-text-size;
+}
+
+h3 {
+  font-size: $lg-text-size;
+}
+
+h4 {
+  font-size: $md-text-size;
+}
+
+h5 {
+  font-size: $md-plus-text-size;
+}

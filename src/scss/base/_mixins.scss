@@ -1,0 +1,29 @@
+@import 'colors';
+@import 'typography';
+
+@mixin button {
+  background-color: $primary-color;
+  border: 1px solid $secondary-color;
+  border-radius: 0.8em;
+  color: $secondary-color;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: $sm-text-size;
+  font-weight: $light;
+  line-height: 1;
+  padding: 0.8rem 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-stack;
+
+  &:hover,
+  &:focus {
+    color: $tertiary-color;
+    outline: 0;
+  }
+
+  &:hover {
+    color: red;
+  }
+}
