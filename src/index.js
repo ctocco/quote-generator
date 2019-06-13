@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/base.scss';
-import App from './App';
+import QuoteBox from './QuoteBox';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<QuoteBox />, document.getElementById('root'));
