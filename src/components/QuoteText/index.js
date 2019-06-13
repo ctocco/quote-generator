@@ -4,7 +4,7 @@ import styles from './QuoteText.module.scss';
 
 function Text({ quote, author }) {
   return (
-    <div id="text">
+    <div id="text" className={styles.text}>
       <blockquote className={styles.quote}>{quote}</blockquote>
       <p>-{author}</p>
     </div>

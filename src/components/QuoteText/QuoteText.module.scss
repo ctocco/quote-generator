@@ -1,0 +1,19 @@
+@import '../../scss/base/index.scss';
+
+.text {
+  margin: 1.953rem;
+  .quote {
+    font-size: $xl-text-size;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+p {
+  text-align: right;
+}
+
+h1 {
+  margin: 0;
+  font-size: 10rem;
+}
