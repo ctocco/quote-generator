@@ -1,20 +1,30 @@
-// Font weights
+/* =======================
+    FONT WEIGHTS
+======================= */
+
 $light: 100;
 $regular: 400;
 $bold: 600;
 
-$font-stack: 'Raleway', sans-serif;
+/* =======================
+    BASE FONTS
+======================= */
 
-// Base Font
-$base-font-family: $font-stack;
+$base-font-family: Helvetica, sans-serif;
 $base-font-weight: $regular;
 $base-font-size: 1rem;
 $base-line-height: 1.4;
 
-// Fixed Font
+/* =======================
+    BASE FIXED FONTS
+======================= */
+
 $fixed-font-family: monospace;
 $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
-// Headings
+/* =======================
+    HEADINGS
+======================= */
+
 $header-font-weight: $bold;

@@ -4,6 +4,8 @@
 @import 'mixins';
 @import 'reset';
 @import 'typography';
+@import 'layout';
+@import 'variables';
 
 html {
   box-sizing: border-box;
@@ -12,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: $font-stack;
+  font-family: $font-family-quotes;
 }
 
 p {
@@ -32,21 +34,21 @@ h5 {
 }
 
 h1 {
-  font-size: $xxl-text-size;
+  font-size: $font-size-xxl;
 }
 
 h2 {
-  font-size: $xl-text-size;
+  font-size: $font-size-xl;
 }
 
 h3 {
-  font-size: $lg-text-size;
+  font-size: $font-size-lg;
 }
 
 h4 {
-  font-size: $md-text-size;
+  font-size: $font-size-md;
 }
 
 h5 {
-  font-size: $md-plus-text-size;
+  font-size: $font-size-sm-md;
 }
