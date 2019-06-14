@@ -51,13 +51,15 @@ class QuoteBox extends Component {
     return (
       <React.Fragment>
         <body className={`${styles.container} ${styles['bg-purple']} ${styles[`${color}`]}`}>
-          <section className={styles.section}>
+          <section className={styles.quoteSection}>
             <div id="quote-box" className={styles.quoteBox}>
               <Quote quote={quote} author={author} />
-              <section>
+              <section className={styles.mediaContainer}>
+                <div>
+                  <SocialMedia platform={twitter} />
+                  <SocialMedia platform={tumblr} />
+                </div>
                 <Button click={this.handleClick} theme="light" />
-                <SocialMedia platform={twitter} />
-                <SocialMedia platform={tumblr} />
               </section>
             </div>
             <p className={styles.siteAuthorName}>by Claudio Tocco</p>

@@ -7,22 +7,27 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-}
-
-.section {
-  .quoteBox {
-    padding: 0.5rem;
-    height: auto;
-    width: 32rem;
-    background-color: $primary-color;
-    border-radius: 1%;
+  .quoteSection {
+    .quoteBox {
+      padding: 0.5rem;
+      height: auto;
+      width: 32rem;
+      background-color: $primary-color;
+      border-radius: 1%;
+    }
+    .siteAuthorName {
+      padding-top: 0.5rem;
+      color: $tertiary-color;
+      font-family: $font-family-quotes;
+      margin: 0;
+      text-align: center;
+    }
   }
-  .siteAuthorName {
-    padding-top: 0.5rem;
-    color: $tertiary-color;
-    font-family: $font-family-quotes;
-    margin: 0;
-    text-align: center;
+  .mediaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
   }
 }
 
