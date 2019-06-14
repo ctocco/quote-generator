@@ -6,8 +6,7 @@
 ======================= */
 
 @mixin button {
-  border-radius: 0.8em;
-  color: $secondary-color;
+  border-radius: 0.2em;
   cursor: pointer;
   display: flex;
   align-self: center;
@@ -21,11 +20,16 @@
 
   &:hover,
   &:focus {
-    color: $tertiary-color;
+    // color: $lightblue;
     outline: 0;
   }
 
   &:hover {
-    color: red;
+    color: lightcyan;
   }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
