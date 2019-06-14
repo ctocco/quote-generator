@@ -1,1 +1,8 @@
 @import '../../scss/base/index.scss';
+a {
+  margin: 0;
+  .fab-square {
+    color: lightsalmon !important;
+    font-size: $font-size-xxl;
+  }
+}
