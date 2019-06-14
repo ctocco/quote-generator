@@ -22,6 +22,7 @@ const shuffleBgColors = colorArray => {
     if (el.includes(bg)) {
       return el;
     }
+    return 'no array found';
   });
   const randArrNums = Math.floor(Math.random() * filteredArr.length);
   return filteredArr[randArrNums];
