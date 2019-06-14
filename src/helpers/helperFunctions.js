@@ -13,4 +13,18 @@ const shuffle = array => {
   return array;
 };
 
-export default shuffle;
+// this function selects background colors @ random //
+
+const shuffleBgColors = colorArray => {
+  const arrayColors = Object.keys(colorArray);
+  const filteredArr = arrayColors.filter(el => {
+    const bg = 'bg';
+    if (el.includes(bg)) {
+      return el;
+    }
+  });
+  const randArrNums = Math.floor(Math.random() * filteredArr.length);
+  return filteredArr[randArrNums];
+};
+
+export { shuffle, shuffleBgColors };

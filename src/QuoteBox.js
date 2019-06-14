@@ -3,7 +3,7 @@ import Quote from './components/QuoteText';
 import Button from './components/Button';
 import SocialMedia from './components/Social_Media';
 import quotesCollection from './api/quoteCollection';
-import shuffle from './helpers/helperFunctions';
+import { shuffle, shuffleBgColors } from './helpers/helperFunctions';
 import styles from './scss/QuoteBox.module.scss';
 
 class QuoteBox extends Component {
@@ -12,8 +12,8 @@ class QuoteBox extends Component {
     this.state = {
       quote: '',
       author: '',
-      counter: 0,
       platform: ['twitter', 'tumblr'],
+      color: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -27,7 +27,6 @@ class QuoteBox extends Component {
   }
 
   handleClick() {
-    const { counter } = this.state;
     const randNums = shuffle(quotesCollection);
     this.setState(prevState => {
       let nextQuote = { quote: randNums[0].quote, author: randNums[0].author };
@@ -37,16 +36,21 @@ class QuoteBox extends Component {
         : nextQuote;
       return nextQuote;
     });
-    this.setState({ counter: counter + 1 });
+
+    // function below from helper functions //
+    const bgColor = shuffleBgColors(styles);
+    this.setState({
+      color: bgColor,
+    });
   }
 
   render() {
-    const { quote, author, counter, platform } = this.state;
+    // console.log(Object.keys(styles));
+    const { quote, author, color, platform } = this.state;
     const [twitter, tumblr] = platform;
-
     return (
       <React.Fragment>
-        <body className={`${styles.container} ${styles[`body${counter}`]}`}>
+        <body className={`${styles.container} ${styles['bg-purple']} ${styles[`${color}`]}`}>
           <section className={styles.section}>
             <div id="quote-box" className={styles.quoteBox}>
               <Quote quote={quote} author={author} />
@@ -56,7 +60,7 @@ class QuoteBox extends Component {
                 <SocialMedia platform={tumblr} />
               </section>
             </div>
-            <p className={styles.text}>by Claudio Tocco</p>
+            <p className={styles.siteAuthorName}>by Claudio Tocco</p>
           </section>
         </body>
       </React.Fragment>
