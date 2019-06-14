@@ -3,7 +3,8 @@
 .text {
   margin: 1.953rem;
   .quote {
-    font-size: $xl-text-size;
+    font-size: $font-size-xl;
+    letter-spacing: $quote-letter-spacing;
     text-align: center;
     margin-bottom: 1rem;
   }
