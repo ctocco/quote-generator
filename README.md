@@ -1,6 +1,6 @@
-#### My Random Quote Generator Site
+# Envinronmental Quotes Generator
 
-#### Folder Structure
+## Folder Structure
 
 ```
 ├── public
@@ -16,9 +16,7 @@
         └── base
 ```
 
-#### Envinronmental Quotes Generator
-
-### Preview of my [browser extension frontend](https://eco-quotes-claudio.now.sh/) !!not yet working
+### Preview of my [Quote App](https://eco-quotes-claudio.now.sh/) !!not yet working
 
 #### [!] I am currently working on the first release.
 
