@@ -33,7 +33,7 @@ Coming soon...
 
 ## Contributing
 
-I'll be happy to hear your feedback!
+I'll be happy to hear your feedback and if you have any quote you would like to add to the app!
 
 ### Contributors
 
@@ -43,5 +43,3 @@ Billiana
 Oliver
 
 ## License
-
-[GNU GPLv3 &copy; 2019 Study Assist](LICENSE)
