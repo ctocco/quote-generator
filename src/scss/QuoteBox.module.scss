@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+
   .quoteSection {
     .quoteBox {
       padding: 0.5rem;
@@ -14,6 +15,7 @@
       width: 32rem;
       background-color: $primary-color;
       border-radius: 1%;
+      z-index: 2;
     }
     .siteAuthorName {
       padding-top: 0.5rem;
@@ -37,28 +39,47 @@
 
 .bg-purple {
   background-image: $gradient-purple;
+  z-index: 0;
 }
 
 .bg-green {
   background-image: $gradient-green;
+  z-index: 0;
 }
 
 .bg-blue {
   background-image: $gradient-blue;
+  z-index: 0;
 }
 
 .bg-yellow {
   background-image: $gradient-yellow;
+  z-index: 0;
 }
 
 .bg-orange {
   background-image: $gradient-orange;
+  z-index: 0;
 }
 
 .bg-lightblue {
   background-image: $gradient-lightblue;
+
+  z-index: 0;
 }
 
+.fade {
+  animation: fadeinout 0.5s linear;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+}
 // $list: purple, green, blue, yellow, orange, lightBlue;
 
 // @each $list, $color in $list {
@@ -66,3 +87,16 @@
 //     background-image: #{'$gradient-' + $list};
 //   }
 // }
+
+/* ================================
+    SPECIAL FX
+================================ */
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 120vh;
+  background-blend-mode: multiply;
+  z-index: -1;
+}
