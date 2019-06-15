@@ -14,6 +14,7 @@ class QuoteBox extends Component {
       author: '',
       platform: ['twitter', 'tumblr'],
       color: null,
+      visibility: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -36,21 +37,32 @@ class QuoteBox extends Component {
         : nextQuote;
       return nextQuote;
     });
-
     // function below from helper functions //
-    const bgColor = shuffleBgColors(styles);
+    const bgColor = shuffleBgColors(styles, this.state.color);
+    // setting state for fade on button click //
     this.setState({
       color: bgColor,
+      visibility: true,
     });
+    // resets after the fade has finished //
+    setTimeout(() => {
+      this.setState({
+        color: bgColor,
+        visibility: false,
+      });
+    }, 500);
   }
 
   render() {
-    // console.log(Object.keys(styles));
+    const classes = this.state.visibility === true ? `${styles.fade}` : null;
     const { quote, author, color, platform } = this.state;
     const [twitter, tumblr] = platform;
+
     return (
       <React.Fragment>
-        <body className={`${styles.container} ${styles['bg-purple']} ${styles[`${color}`]}`}>
+        <body
+          className={`${styles.container} ${styles['bg-purple']} ${styles[`${color}`]} ${classes}`}
+        >
           <section className={styles.quoteSection}>
             <div id="quote-box" className={styles.quoteBox}>
               <Quote quote={quote} author={author} />

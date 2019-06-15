@@ -1,4 +1,5 @@
 const shuffle = array => {
+  // initial shuffle of quotes //
   let i = array.length;
   let j = 0;
   let temp;
@@ -15,16 +16,17 @@ const shuffle = array => {
 
 // this function selects background colors @ random //
 
-const shuffleBgColors = colorArray => {
+const shuffleBgColors = (colorArray, stateColor) => {
+  // array of keys only return array items with bg //
   const arrayColors = Object.keys(colorArray);
-  const filteredArr = arrayColors.filter(el => {
-    const bg = 'bg';
-    if (el.includes(bg)) {
-      return el;
-    }
-    return 'no array found';
-  });
+  const filteredArr = arrayColors.filter(el => (el.includes('bg') ? el : null));
   const randArrNums = Math.floor(Math.random() * filteredArr.length);
+  console.log(filteredArr[randArrNums], stateColor);
+  // if same color shuffle number again //
+  if (filteredArr[randArrNums] === stateColor) {
+    const randArrNums = Math.floor(Math.random() * filteredArr.length);
+    return filteredArr[randArrNums];
+  }
   return filteredArr[randArrNums];
 };
 
