@@ -52,6 +52,18 @@ const quotesCollection = [
       'One of the first conditions of happiness is that the link between man and nature shall not be broken.',
     author: 'Leo Tolstoy',
   },
+  {
+    quoteId: 11,
+    quote:
+      'We can"t save the world by playing by the rules, because the rules have to be changed. Everything needs to change - and it has to start today.',
+    author: 'Greta Thunberg',
+  },
+  {
+    quoteId: 11,
+    quote:
+      'The climate crisis has already been solved. We already have all the facts and solutions. All we have to do is to wake up and change.',
+    author: 'Greta Thunberg',
+  },
 ];
 
 export default quotesCollection;
