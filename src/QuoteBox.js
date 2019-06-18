@@ -68,8 +68,8 @@ class QuoteBox extends Component {
               <Quote quote={quote} author={author} />
               <section className={styles.mediaContainer}>
                 <div>
-                  <SocialMedia platform={twitter} />
-                  <SocialMedia platform={tumblr} />
+                  <SocialMedia platform={twitter} quote={quote} author={author} />
+                  <SocialMedia platform={tumblr} quote={quote} author={author} />
                 </div>
                 <Button click={this.handleClick} theme="light" />
               </section>
