@@ -5,6 +5,7 @@ module.exports = {
     es6: true,
     browser: true,
     node: true,
+    jest: true,
   },
   extends: ['airbnb'],
   plugins: ['babel', 'import', 'jsx-a11y', 'react', 'prettier'],

@@ -7,7 +7,7 @@ function Button({ click, theme = 'light', color }) {
     backgroundImage: color,
   };
   return (
-    <React.Fragment>
+    <>
       <button
         type="button"
         onClick={click}
@@ -16,7 +16,7 @@ function Button({ click, theme = 'light', color }) {
       >
         New Quote
       </button>
-    </React.Fragment>
+    </>
   );
 }
 

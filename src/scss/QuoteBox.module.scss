@@ -38,34 +38,42 @@
 ================================ */
 
 .bg-purple {
-  background-image: $gradient-purple;
-  z-index: 0;
+  color: #4a474d;
+  background-blend-mode: darken;
+  background-image: url('../images/mangrove.svg'), $gradient-purple;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  // background-position: -50% 200%;
 }
 
 .bg-green {
-  background-image: $gradient-green;
-  z-index: 0;
+  background-image: url('../images/mangrove.svg'), $gradient-green;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 
 .bg-blue {
-  background-image: $gradient-blue;
-  z-index: 0;
+  background-image: url('../images/mangrove.svg'), $gradient-blue;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 
 .bg-yellow {
-  background-image: $gradient-yellow;
-  z-index: 0;
+  background-image: url('../images/mangrove.svg'), $gradient-yellow;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 
 .bg-orange {
-  background-image: $gradient-orange;
-  z-index: 0;
+  background-image: url('../images/mangrove.svg'), $gradient-orange;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 
 .bg-lightblue {
-  background-image: $gradient-lightblue;
-
-  z-index: 0;
+  background-image: url('../images/mangrove.svg'), $gradient-lightblue;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 
 .fade {
@@ -80,23 +88,17 @@
     opacity: 0;
   }
 }
-// $list: purple, green, blue, yellow, orange, lightBlue;
 
-// @each $list, $color in $list {
-//   .bg-#{$list} {
-//     background-image: #{'$gradient-' + $list};
-//   }
-// }
+$list: purple, green, blue, yellow, orange, lightBlue;
+
+@each $list, $color in $list {
+  .bg-#{$list} {
+    background-image: #{'$gradient-' + $list};
+  }
+}
 
 /* ================================
     SPECIAL FX
 ================================ */
 
-.image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 120vh;
-  background-blend-mode: multiply;
-  z-index: -1;
-}
+//Free Vector Design by: <a rel="nofollow" href="https://www.vecteezy.com">Vecteezy</a>
