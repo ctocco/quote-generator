@@ -59,10 +59,16 @@ const quotesCollection = [
     author: 'Greta Thunberg',
   },
   {
-    quoteId: 11,
+    quoteId: 12,
     quote:
       'The climate crisis has already been solved. We already have all the facts and solutions. All we have to do is to wake up and change.',
     author: 'Greta Thunberg',
+  },
+  {
+    quoteId: 13,
+    quote:
+      'I believe that air pollution is one of most pressing challenge that we are facing in the 21st century.',
+    author: 'Antonio Neves Da Silva',
   },
 ];
 
