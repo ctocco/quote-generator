@@ -1,5 +1,4 @@
 {
-  "name": "quote-generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "now-dev": "react-scripts start",
+    "now-build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
     "jest": "^24.7.1",
     "lint-staged": "^8.2.0",
     "node-sass": "^4.12.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.8.6"
   }
 }
