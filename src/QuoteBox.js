@@ -74,7 +74,13 @@ class QuoteBox extends Component {
                 <Button click={this.handleClick} theme="light" />
               </section>
             </div>
-            <p className={styles.siteAuthorName}>by Claudio Tocco</p>
+            <a
+              href="https://github.com/ctocco/quote-generator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className={styles.siteAuthorName}>by Claudio Tocco</p>
+            </a>
           </section>
         </body>
       </React.Fragment>

@@ -16,13 +16,7 @@
       background-color: $primary-color;
       border-radius: 1%;
       z-index: 2;
-    }
-    .siteAuthorName {
-      padding-top: 0.5rem;
-      color: $tertiary-color;
-      font-family: $font-family-quotes;
-      margin: 0;
-      text-align: center;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
     }
   }
   .mediaContainer {
@@ -32,7 +26,18 @@
     padding: 2rem;
   }
 }
+.siteAuthorName {
+  color: whitesmoke;
+  font-size: $font-size-base;
+  font-family: $font-family-quotes;
+  text-align: left;
+  transition: 0.8s;
+  margin-left: 0.3rem;
+}
 
+.siteAuthorName:hover {
+  font-size: $font-size-base + 0.1rem;
+}
 /* ================================
     Gradient-Loop on button click
 ================================ */
@@ -43,7 +48,6 @@
   background-image: url('../images/mangrove.svg'), $gradient-purple;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
-  // background-position: -50% 200%;
 }
 
 .bg-green {
@@ -76,6 +80,7 @@
   background-size: cover;
 }
 
+// on button click site will fade to white quickly
 .fade {
   animation: fadeinout 0.5s linear;
   opacity: 1;

@@ -21,7 +21,6 @@ const shuffleBgColors = (colorArray, stateColor) => {
   const arrayColors = Object.keys(colorArray);
   const filteredArr = arrayColors.filter(el => (el.includes('bg') ? el : null));
   const randArrNums = Math.floor(Math.random() * filteredArr.length);
-  console.log(filteredArr[randArrNums], stateColor);
   // if same color shuffle number again //
   if (filteredArr[randArrNums] === stateColor) {
     const randArrNums = Math.floor(Math.random() * filteredArr.length);
