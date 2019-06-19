@@ -61,12 +61,23 @@ For testing I am using [jest](https://jestjs.io/).
 
 #### [!] I am currently working on the first release.
 
-### Tech Stack Overview
+### Tech Stack
 
-HTML
-SASS
-Javascript es6
-React.js
+| Client Side | Server side            |
+| ----------- | ---------------------- |
+| HTML5       | Current no server side |
+| SCSS        |
+| Prettier    |
+| SCSS        |
+| Node-sass   |
+| Prettier    |
+| Eslint      |
+| Lint staged |
+| Now.zeit    |
+| Jest        |
+| JS ES6      |
+
+_*Please check the package json for more specific dependencies*_
 
 ## Contributing
 
@@ -77,9 +88,9 @@ feel free to message me
 
 This project exists thanks to:
 
-Billiana
+[Biliana Valeva](https://github.com/Bilie)
 
-Oliver
+[Oliver Weber](https://github.com/oliverwebr)
 
 Free Code Camp
 
