@@ -36,34 +36,34 @@ use the project to create a list of their own quotes and share with their friend
 
 ## Usage
 
-1. _api_
+1. **api**
 
 The api folder is where you will find quoteCollection.js. This is where you can edit and add to the list of quotes. They will then automatically be generated for you at random.
 
-2. _components_
+2. **components**
 
 These are all my react components _button_,_quoteText_,_SocialMedia_. They are reusable and take the props element from the QuoteBox.js parent element. Not that I am also using [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) with react to make sure the correct type of props types are being passed to the children.
 
-3. _helpers_
+3. **helpers**
 
 These are the helper functions that help randomise the text and background that is then imported into QuoteBox.js.
 
-4. _scss_
+4. **scss**
 
 I am using [css modules](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet) and [css-bem](https://css-tricks.com/bem-101/) method however the project is not currently big enough to exhibit full bem structure.
 
 The base folder contains all my base styling
 
-5. _images_
+5. **images**
 
 Here you will find the svg image that overlays the gradient background
 
-6. _eslint and prettier_
+6. **eslint and prettier**
 
 For cleaner code I have configured these based on Airbnb eslint styling to insure my code stays clean
 and readable. [eslint](https://www.npmjs.com/package/eslint-config-airbnb)
 
-7. _jest_
+7. **jest**
 
 For testing I am using [jest](https://jestjs.io/).
 
@@ -83,7 +83,7 @@ For testing I am using [jest](https://jestjs.io/).
 | Jest        |
 | JS ES6      |
 
-_*Please check the package json for more specific dependencies*_
+**Please check the package json for more specific dependencies**
 
 ## Contributing
 
