@@ -50,16 +50,20 @@ These are the helper functions that help randomise the text and background that 
 
 I am using [css modules](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet) and [css-bem](https://css-tricks.com/bem-101/) method however the project is not currently big enough to exhibit full bem structure.
 
-5. eslint and prettier
+The base folder contains all my base styling
+
+5. images
+
+Here you will find the svg image that overlays the gradient background
+
+6. eslint and prettier
 
 For cleaner code I have configured these based on Airbnb eslint styling to insure my code stays clean
 and readable. [eslint](https://www.npmjs.com/package/eslint-config-airbnb)
 
-6. jest
+7. jest
 
 For testing I am using [jest](https://jestjs.io/).
-
-#### [!] I am currently working on the first release.
 
 ### Tech Stack
 
