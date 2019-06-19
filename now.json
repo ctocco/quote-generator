@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "EQGenerator",
+    "name": "eq-generator",
     "builds": [
         {
             "src": "package.json",

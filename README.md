@@ -1,5 +1,7 @@
 # Envinronmental Quotes Generator
 
+Preview of my [Quote App](https://eq-generator.ctocco.now.sh) now online!
+
 ## Project Synopsis
 
 > "Sundarbans, (is) the world’s largest contiguous mangrove forest"
@@ -56,8 +58,6 @@ and readable. [eslint](https://www.npmjs.com/package/eslint-config-airbnb)
 6. jest
 
 For testing I am using [jest](https://jestjs.io/).
-
-#### Preview of my [Quote App](https://eco-quotes-claudio.now.sh/) !!not online
 
 #### [!] I am currently working on the first release.
 
