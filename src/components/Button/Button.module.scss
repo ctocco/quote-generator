@@ -5,33 +5,10 @@
   background: lightsalmon;
   color: $white;
   align-self: flex-end;
-  // border: 1px solid $gradient-yellow;
+  transition: 0.5s;
 }
 
-.btn--light {
-  @include button;
-}
-
-.bg-purple {
-  background-image: $gradient-purple;
-}
-
-.bg-green {
-  background-image: $gradient-green;
-}
-
-.bg-blue {
-  background-image: $gradient-blue;
-}
-
-.bg-yellow {
-  background-image: $gradient-yellow;
-}
-
-.bg-orange {
-  background-image: $gradient-orange;
-}
-
-.bg-lightblue {
-  background-image: $gradient-lightblue;
+.btn:hover {
+  color: #f8f8f8;
+  background: rgb(148, 137, 137);
 }

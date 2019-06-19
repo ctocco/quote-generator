@@ -2,8 +2,13 @@
 
 a {
   margin: 0;
-  .fab-square {
-    color: lightsalmon !important;
-    font-size: $font-size-xxl;
-  }
+}
+.fab-square {
+  color: lightsalmon;
+  font-size: $font-size-xxl;
+  transition: 0.5s;
+}
+
+.fab-square:hover {
+  color: rgb(148, 137, 137);
 }
