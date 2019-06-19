@@ -2,13 +2,13 @@
 
 .btn {
   @include button;
-  background: lightsalmon;
+  background: $primary-color;
   color: $white;
   align-self: flex-end;
   transition: 0.5s;
 }
 
 .btn:hover {
-  color: #f8f8f8;
-  background: rgb(148, 137, 137);
+  color: $white;
+  background: $dark-grey;
 }

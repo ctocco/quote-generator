@@ -2,17 +2,18 @@
     Base
 ======================= */
 
-$primary-color: #f8f8f8;
+$primary-color: lightsalmon;
 $secondary-color: #6b7a8f;
 $tertiary-color: #f7c331;
 $quaternary-color: #dcc7aa;
 $quinary-color: #f7882f;
 
 // B&W
-$black: #000000;
-$white: #ffffff;
+$black: #333;
+$white: #f8f8f8;
 $dark: #030305;
 $light-grey: #f9f9f9;
+$dark-grey: #4a474d;
 
 // Main
 $pink: #ff7fc9;
@@ -66,7 +67,7 @@ $gradient-lightblue: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 ======================= */
 
 $text-light: $light-grey;
-$text-dark: $dark;
+$text-dark: $dark-grey;
 
 $link-hover-decoration: none;
 $strong-color: $pink;

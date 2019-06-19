@@ -13,7 +13,7 @@
       padding: 0.5rem;
       height: auto;
       width: 32rem;
-      background-color: $primary-color;
+      background-color: $white;
       border-radius: 1%;
       z-index: 2;
       box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
@@ -27,7 +27,7 @@
   }
 }
 .siteAuthorName {
-  color: whitesmoke;
+  color: $white;
   font-size: $font-size-base;
   font-family: $font-family-quotes;
   text-align: left;
@@ -43,7 +43,7 @@
 ================================ */
 
 .bg-purple {
-  color: #4a474d;
+  color: $dark-grey;
   background-blend-mode: darken;
   background-image: url('../images/mangrove.svg'), $gradient-purple;
   background-repeat: no-repeat, no-repeat;

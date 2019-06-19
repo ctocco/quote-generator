@@ -4,11 +4,11 @@ a {
   margin: 0;
 }
 .fab-square {
-  color: lightsalmon;
+  color: $primary-color;
   font-size: $font-size-xxl;
   transition: 0.5s;
 }
 
 .fab-square:hover {
-  color: rgb(148, 137, 137);
+  color: $dark-grey;
 }
