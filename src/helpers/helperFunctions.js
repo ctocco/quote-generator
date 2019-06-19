@@ -1,5 +1,6 @@
 const shuffle = array => {
   // initial shuffle of quotes //
+  console.log(array);
   let i = array.length;
   let j = 0;
   let temp;

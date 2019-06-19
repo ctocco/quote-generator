@@ -16,7 +16,6 @@ class QuoteBox extends Component {
       color: null,
       visibility: false,
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillMount() {
@@ -27,7 +26,7 @@ class QuoteBox extends Component {
     });
   }
 
-  handleClick() {
+  handleClick = () => {
     const randNums = shuffle(quotesCollection);
     this.setState(prevState => {
       let nextQuote = { quote: randNums[0].quote, author: randNums[0].author };
@@ -37,25 +36,33 @@ class QuoteBox extends Component {
         : nextQuote;
       return nextQuote;
     });
-    // function below from helper functions //
-    const bgColor = shuffleBgColors(styles, this.state.color);
-    // setting state for fade on button click //
+    this.shuffleColors();
+  };
+
+  shuffleColors() {
+    // first parameter is the styles array, second is current color //
+    // returns the background color as a string //
+    const { color } = this.state;
+    const bgColor = shuffleBgColors(styles, color);
     this.setState({
       color: bgColor,
       visibility: true,
     });
-    // resets after the fade has finished //
+    this.fadeBackground();
+  }
+
+  fadeBackground() {
+    // setting state for fade on button click //
     setTimeout(() => {
       this.setState({
-        color: bgColor,
         visibility: false,
       });
     }, 500);
   }
 
   render() {
-    const classes = this.state.visibility === true ? `${styles.fade}` : null;
-    const { quote, author, color, platform } = this.state;
+    const { quote, author, color, platform, visibility } = this.state;
+    const classes = visibility === true ? `${styles.fade}` : null;
     const [twitter, tumblr] = platform;
 
     return (
