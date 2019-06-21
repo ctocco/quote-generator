@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.module.scss';
 
-function Button({ click, theme = 'light', color }) {
+const Button = ({ click, theme = 'light', color }) => {
   const stylesButton = {
     backgroundImage: color,
   };
@@ -18,7 +18,7 @@ function Button({ click, theme = 'light', color }) {
       </button>
     </>
   );
-}
+};
 
 Button.propTypes = {
   click: PropTypes.func,
