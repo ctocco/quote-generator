@@ -6,4 +6,4 @@ describe('General Test', () => {
   });
 });
 
-// npx jest --watch
+// npx jest --watchAll
