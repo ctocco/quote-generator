@@ -32,43 +32,79 @@ const quotesCollection = [
   {
     quoteId: 7,
     quote: 'Buy less, choose well.',
-    author: 'Vivienne Westwood',
+    author: '-Vivienne Westwood',
   },
   {
     quoteId: 8,
     quote:
       'Becoming vegan is the most important and direct change we can immediately make to save the planet and its species.',
-    author: 'Chris Hedges',
+    author: '-Chris Hedges',
   },
   {
     quoteId: 9,
     quote:
       'The oceans are in trouble; the coasts are in trouble; our marine resources are in trouble. These are not challenges we can sweep aside.',
-    author: 'James Watkins',
+    author: '-James Watkins',
   },
   {
     quoteId: 10,
     quote:
       'One of the first conditions of happiness is that the link between man and nature shall not be broken.',
-    author: 'Leo Tolstoy',
+    author: '-Leo Tolstoy',
   },
   {
     quoteId: 11,
     quote:
-      'We can"t save the world by playing by the rules, because the rules have to be changed. Everything needs to change - and it has to start today.',
-    author: 'Greta Thunberg',
+      "We can't save the world by playing by the rules, because the rules have to be changed. Everything needs to change - and it has to start today.",
+    author: '-Greta Thunberg',
   },
   {
     quoteId: 12,
     quote:
       'The climate crisis has already been solved. We already have all the facts and solutions. All we have to do is to wake up and change.',
-    author: 'Greta Thunberg',
+    author: '-Greta Thunberg',
   },
   {
     quoteId: 13,
     quote:
       'I believe that air pollution is one of most pressing challenge that we are facing in the 21st century.',
-    author: 'Antonio Neves Da Silva',
+    author: '-Antonio Neves Da Silva',
+  },
+  {
+    quoteId: 14,
+    quote: 'This is the moment when we must come togther to save this planet',
+    author: '-Barak Obama',
+  },
+  {
+    quoteId: 15,
+    quote: 'It does not cost the world to save the planet',
+    author: '-Ottmar Edenhofer',
+  },
+  {
+    quoteId: 16,
+    quote: 'To reconnect with nature is key if we want to save the planet',
+    author: '-Jane Goodall',
+  },
+  {
+    quoteId: 17,
+    quote: 'I need the sea because it teaches me',
+    author: '-Pablo Neruda',
+  },
+  {
+    quoteId: 18,
+    quote: 'How inappropriate to call this planet Earth when it is quite clealy an ocean',
+    author: '-Arthur C. Clark',
+  },
+  {
+    quoteId: 19,
+    quote: 'Even castles made from sand fall to the ocean.',
+    author: '-Jimi Hedrix',
+  },
+  {
+    quoteId: 20,
+    quote:
+      'At first I thought I was fighting to save rubber trees, then I thought I was fighting to save the Amazon rain forest. Now I realise I am fighting for humanity',
+    author: '-Chico Mendes',
   },
 ];
 
