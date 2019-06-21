@@ -1,6 +1,5 @@
 const shuffle = array => {
   // initial shuffle of quotes //
-  console.log(array);
   let i = array.length;
   let j = 0;
   let temp;
@@ -25,7 +24,7 @@ const shuffleBgColors = (colorArray, stateColor) => {
   // if same color shuffle number again //
   if (filteredArr[randArrNums] === stateColor) {
     const randArrNums = Math.floor(Math.random() * filteredArr.length);
-    return filteredArr[randArrNums];
+    return filteredArr[randArrNums + 1];
   }
   return filteredArr[randArrNums];
 };
