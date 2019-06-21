@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import quotesCollection from './api/quoteCollection';
 import Quote from './components/QuoteText';
 import Button from './components/Button';
 import SocialMedia from './components/Social_Media';
-import quotesCollection from './api/quoteCollection';
+import Header from './components/Header';
 import { shuffle, shuffleBgColors } from './helpers/helperFunctions';
 import styles from './scss/QuoteBox.module.scss';
 
@@ -37,6 +38,7 @@ class QuoteBox extends Component {
       return nextQuote;
     });
     this.shuffleColors();
+    console.log(styles);
   };
 
   shuffleColors() {
@@ -66,10 +68,11 @@ class QuoteBox extends Component {
     const [twitter, tumblr] = platform;
 
     return (
-      <React.Fragment>
-        <body
+      <>
+        <main
           className={`${styles.container} ${styles['bg-purple']} ${styles[`${color}`]} ${classes}`}
         >
+          <Header />
           <section className={styles.quoteSection}>
             <div id="quote-box" className={styles.quoteBox}>
               <Quote quote={quote} author={author} />
@@ -81,16 +84,9 @@ class QuoteBox extends Component {
                 <Button click={this.handleClick} theme="light" />
               </section>
             </div>
-            <a
-              href="https://github.com/ctocco/quote-generator"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className={styles.siteAuthorName}>by Claudio Tocco</p>
-            </a>
           </section>
-        </body>
-      </React.Fragment>
+        </main>
+      </>
     );
   }
 }

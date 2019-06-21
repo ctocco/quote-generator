@@ -26,18 +26,7 @@
     padding: 2rem;
   }
 }
-.siteAuthorName {
-  color: $white;
-  font-size: $font-size-base;
-  font-family: $font-family-quotes;
-  text-align: left;
-  transition: 0.8s;
-  margin-left: 0.3rem;
-}
 
-.siteAuthorName:hover {
-  font-size: $font-size-base + 0.1rem;
-}
 /* ================================
     Gradient-Loop on button click
 ================================ */
