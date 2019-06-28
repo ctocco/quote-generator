@@ -30,3 +30,5 @@ const shuffleBgColors = (colorArray, stateColor) => {
 };
 
 export { shuffle, shuffleBgColors };
+
+// use this instead in next version for array notes[index % notes.length] 
