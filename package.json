@@ -16,7 +16,7 @@
     "prettier": "prettier --write src/**/*.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --watchall",
     "eject": "react-scripts eject",
     "now-dev": "react-scripts start",
     "now-build": "react-scripts build"
