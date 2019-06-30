@@ -17,29 +17,35 @@ class QuoteBox extends Component {
       platform: ['twitter', 'tumblr'],
       color: null,
       visibility: false,
-      indexNum: 0,
+      quoteIndex: 1,
     };
   }
 
   componentWillMount() {
-    const randNums = shuffle(quotesCollection);
+    const randomisedQuotes = shuffle(quotesCollection);
     this.setState({
-      quotes: randNums,
-      quote: randNums[0].quote,
-      author: randNums[0].author,
+      quotes: randomisedQuotes,
+      quote: randomisedQuotes[0].quote,
+      author: randomisedQuotes[0].author,
+    });
+  }
+
+  setQuote() {
+    // this function will loop through the quotes and once at the end start again //
+    const { quoteIndex, quotes } = this.state;
+    const newQuote = quotes[quoteIndex % quotes.length];
+    this.setState({
+      quote: newQuote.quote,
+      author: newQuote.author,
     });
   }
 
   handleClick = () => {
-    const randNums = shuffle(quotesCollection);
-    this.setState(prevState => {
-      let nextQuote = { quote: randNums[0].quote, author: randNums[0].author };
-      const isSameQuote = JSON.stringify(prevState) === JSON.stringify(nextQuote);
-      nextQuote = isSameQuote
-        ? { quote: randNums[1].quote, author: randNums[1].author }
-        : nextQuote;
-      return nextQuote;
+    const { quoteIndex } = this.state;
+    this.setState({
+      quoteIndex: quoteIndex + 1,
     });
+    this.setQuote();
     this.shuffleColors();
   };
 
