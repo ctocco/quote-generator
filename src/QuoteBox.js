@@ -11,17 +11,20 @@ class QuoteBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      quotes: null,
       quote: '',
       author: '',
       platform: ['twitter', 'tumblr'],
       color: null,
       visibility: false,
+      indexNum: 0,
     };
   }
 
   componentWillMount() {
     const randNums = shuffle(quotesCollection);
     this.setState({
+      quotes: randNums,
       quote: randNums[0].quote,
       author: randNums[0].author,
     });
@@ -38,7 +41,6 @@ class QuoteBox extends Component {
       return nextQuote;
     });
     this.shuffleColors();
-    console.log(styles);
   };
 
   shuffleColors() {
@@ -66,7 +68,6 @@ class QuoteBox extends Component {
     const { quote, author, color, platform, visibility } = this.state;
     const classes = visibility === true ? `${styles.fade}` : null;
     const [twitter, tumblr] = platform;
-
     return (
       <>
         <main
