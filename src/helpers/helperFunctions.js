@@ -20,6 +20,7 @@ const shuffleBgColors = (colorArray, stateColor) => {
   // array of keys only return array items with bg //
   const arrayColors = Object.keys(colorArray);
   const filteredArr = arrayColors.filter(el => (el.includes('bg') ? el : null));
+  console.log(filteredArr);
   const randArrNums = Math.floor(Math.random() * filteredArr.length);
   // if same color shuffle number again //
   if (filteredArr[randArrNums] === stateColor) {
@@ -31,4 +32,4 @@ const shuffleBgColors = (colorArray, stateColor) => {
 
 export { shuffle, shuffleBgColors };
 
-// use this instead in next version for array notes[index % notes.length] 
+// use this instead in next version for array notes[index % notes.length]
